@@ -24,7 +24,7 @@ http://humanzz.spaces.live.com/blog/cns!82322F9506CB0449!713.entry
 Setup
 =====
 	
-	ruby script/plugin install git://github.com/humanzz/version_cache.git
+	ruby script/plugin install git://github.com/humanzz/method_cache.git
 	
 	
 Examples
