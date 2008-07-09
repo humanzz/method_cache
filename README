@@ -1,0 +1,42 @@
+MethodCache
+===========
+
+A Rails (v2.1.0) plugin that tries to solve the problem of having to call a method repetitively. That method is expensive to be recalculated everytime.
+The solution is to cache the method results and we've always done that by caching a method's result in instance variables.
+
+method_cache plugin frees you from the trouble of worrying about writing caching code and introduces a couple of utility methods
+in ActiveRecord objects that make your life easier.
+
+In its current form, the plugin provides the following extensions to ActiveRecord Objects
+
+caches_method :method_name
+caches_class_method :method_name
+and for expiring the cache
+instance.expire_method :method_name
+Class.expire_instance_method :method_name, id
+Class.expire_class_method :method_name
+
+
+Introducing the plugin blog entry
+=================================
+http://humanzz.spaces.live.com/blog/cns!82322F9506CB0449!713.entry
+
+Setup
+=====
+	
+	ruby script/plugin install git://github.com/humanzz/version_cache.git
+	
+	
+Examples
+========
+class User < ActiveRecord::Base
+  def costy_method
+    #some real heavy calculation that takes alot of resources
+    #to complete
+    #this method is called regularly and its results rarely change
+  end
+  caches_method :costy_method
+end
+
+
+Copyright (c) 2008 humanzz (Ahmed Sobhi), released under the MIT license
