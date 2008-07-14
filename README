@@ -58,7 +58,9 @@ class User < ActiveRecord::Base
   caches_method :costy_method, :until => :midnight
 end
 
-:until also accepts Time and date objects
+:until also accepts Time and date objects but I'm considering removing until or have it 
+support things like :midnight because otherwise it would cause errors after the specified
+date or time have passed.
 
 To expire cached instance methods
 @user.expire_method :costy_method
@@ -80,4 +82,7 @@ caches_class_method also supports the :for and :until options
 To expire class methods
 User.expire_class_method :costy_class_method
 
+Test
+====
+rake test:plugins DB=sqlite3
 Copyright (c) 2008 humanzz (Ahmed Sobhi), released under the MIT license

@@ -1,12 +1,15 @@
 class MethodCacher
-  def self.read(key)
+  def self.read(key, raise_exceptions = false)
     value = Rails.cache.read(key)
     begin
       value = Marshal.load(value) unless value.nil?
     rescue ArgumentError => e
       #autorequiring types that have not been yet required
       match = /#<ArgumentError: undefined class\/module (.*)>/.match(e.inspect)
-      raise e if match.nil?
+      if match.nil?
+        raise if raise_exceptions
+        return nil
+      end  
       #match[1] can take the forms: Item, Product::Item, Item::, Product::Item::
       missing_constants = match[1].split('::')
       if missing_constants.length == 1
@@ -22,22 +25,24 @@ class MethodCacher
     value
   rescue MemCache::MemCacheError => err
     ActiveRecord::Base.logger.info "MethodCacher.read MemCache Error: #{err.message}"
+    raise if raise_exceptions
     nil
   end
   
-  def self.write(key, value, expiry = 0)
+  def self.write(key, value, expiry = 0, raise_exception = false)
     Rails.cache.write(key,Marshal.dump(value), :expires_in => expiry)
     value
   rescue MemCache::MemCacheError => err
     ActiveRecord::Base.logger.debug "MethodCacher.write MemCache Error: #{err.message}"
+    raise if raise_exceptions
     nil
   end
   
-  def self.delete(key)
+  def self.delete(key, raise_exceptions = false)
     Rails.cache.delete(key)
-    nil
   rescue MemCache::MemCacheError => err
     ActiveRecord::Base.logger.debug "MethodCacher.delete MemCache Error: #{err.message}"
+    raise if raise_exceptions
     nil
   end
 end
@@ -58,6 +63,8 @@ module ActiveRecord
         def caches_method(method, options = {})
           include InstanceMethods
           return unless ActionController::Base.perform_caching
+          options[:until] = options[:until].to_time.rfc2822 if options[:until] && (options[:until].is_a?(Time) ||options[:until].is_a?(Date))
+          options[:for] = options[:for].to_i if options[:for]
           class_eval <<-"end_eval"
           alias_method  :cached_#{method.to_s}, :#{method.to_s}
           def #{method.to_s}
@@ -73,33 +80,45 @@ module ActiveRecord
           end
           
           def cached_#{method.to_s}_options
-            @cached_#{method}_options = eval "#{options.inspect}" if @cached_#{method}_options.nil?
+            if @cached_#{method}_options.nil?
+              @cached_#{method}_options = #{options.inspect}
+              if @cached_#{method}_options[:until] && @cached_#{method}_options[:until].is_a?(String) 
+                @cached_#{method}_options[:until] = Time.rfc2822(@cached_#{method}_options[:until]) 
+              end
+            end
             @cached_#{method}_options
           end
           end_eval
         end
         
         def caches_class_method(method, options = {})
+          options[:until] = options[:until].rfc2822 if options[:until] && (options[:until].is_a?(Time) ||options[:until].is_a?(Date))
+          options[:for] = options[:for].to_i if options[:for]
           return unless ActionController::Base.perform_caching
           class_eval <<-"end_eval"
           class << self
-            @@cached_method_options = eval "#{options.inspect}"
+            @@cached_#{method}_options = #{options.inspect}
             cached_data = nil                      
             alias_method  :cached_#{method.to_s}, :#{method.to_s}
             
             def #{method.to_s}
-              #ActiveRecord::Base.logger.debug ">>>>>>cached_method called"
               #needs to get data from cache here
-              #ActiveRecord::Base.logger.debug ">>>>>>>>>>>>>>>class variable nil. getting from memcache " + "cached_#{method}_for_\#{self.to_s}"
               cached_data = MethodCacher.read("cached_#{method}_for_\#{self.to_s}")
               if cached_data.nil?
-                #ActiveRecord::Base.logger.debug ">>>>>>>>>>>>>>>class variable nil. getting from original method"
                 cached_data = cached_#{method.to_s}
-                MethodCacher.write("cached_#{method}_for_\#{self.to_s}",cached_data, seconds_to_expire(@@cached_method_options))
+                MethodCacher.write("cached_#{method}_for_\#{self.to_s}",cached_data, seconds_to_expire(cached_#{method}_options))
               end
-              #ActiveRecord::Base.logger.debug ">>>>>>>>>>>>>>>returning class variable"
               cached_data
             end
+            
+            def cached_#{method}_options
+              if @@cached_#{method}_options[:until] && @@cached_#{method}_options[:until].is_a?(String) 
+                @@cached_#{method}_options[:until] = Time.rfc2822(@@cached_#{method}_options[:until]) 
+              end
+              @@cached_#{method}_options
+            end  
+            
+            
           end
           end_eval
         end        
@@ -110,9 +129,7 @@ module ActiveRecord
         end
         
         def expire_instance_method(method, id)
-          #puts ">>>>>>>>>>>>>>>expire_instance_method #{method} 1"
           return unless ActionController::Base.perform_caching
-          #puts ">>>>>>>>>>>>>>>expire_instance_method #{method} 2"
           MethodCacher.delete("cached_#{method}_for_#{self.to_s}_#{id}")
         end
         
@@ -120,14 +137,14 @@ module ActiveRecord
           if options.has_key?(:until)
             case options[:until]
               when 'midnight', :midnight
-              return ((Time.now + 1.day).midnight - Time.now).to_i
+              secs = ((Time.now + 1.day).midnight - Time.now).to_i
             else
-              if options[:until].is_a?(Time) || options[:until].is_a?(Date)
-                return (options[:until].to_time - Time.now).to_i
-              end  
+              secs = (options[:until] - Time.now).to_i
             end
+            raise ":until(#{options[:until].inspect}) is less than Time.now by #{secs}" if secs <= 0
+            return secs
           elsif options.has_key?(:for)
-            return options[:for]
+            return options[:for].to_i
           else
             0
           end
@@ -136,9 +153,7 @@ module ActiveRecord
       
       module InstanceMethods
         def expire_method(method)
-          #puts ">>>>>>>>>>>>>>>expire_method #{method} 1"
           return unless ActionController::Base.perform_caching
-          #puts ">>>>>>>>>>>>>>>expire_method #{method} 2"
           MethodCacher.delete("cached_#{method.to_s}_for_#{self.class.name}_#{@attributes['id']}")
           remove_instance_variable("@cached_#{method.to_s}".to_sym) if instance_variables.include? "@cached_#{method.to_s}"
         end
@@ -148,12 +163,12 @@ module ActiveRecord
           if options.has_key?(:until)
             case options[:until]
               when 'midnight', :midnight
-              return ((Time.now + 1.day).midnight - Time.now).to_i
+              secs = ((Time.now + 1.day).midnight - Time.now).to_i  
             else
-              if options[:until].is_a?(Time) || options[:until].is_a?(Date)
-                return (options[:until].to_time - Time.now).to_i
-              end  
+              secs = (options[:until] - Time.now).to_i
             end
+            raise ":until(#{options[:until].inspect}) is less than Time.now by #{secs}" if secs <= 0
+            return secs
           elsif options.has_key?(:for)
             return options[:for]
           else

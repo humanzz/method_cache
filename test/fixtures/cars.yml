@@ -1,0 +1,11 @@
+skoda_felicia:
+  id: 1
+  name: Skoda Felicia
+
+davinci_code:
+  id: 2
+  name: Davinci Code
+
+shotgun:
+  id: 3
+  name: Shotgun

@@ -1,0 +1,1522 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.140000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.062000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.016000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.141000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.016000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.016000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.063000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.063000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.110000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.110000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.093000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.062000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.016000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.062000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.063000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.063000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.234000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.094000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.172000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.109000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.016000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.063000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.079000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.016000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.093000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.079000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.094000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.125000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.109000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.016000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.109000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.172000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.281000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.157000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.016000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.078000)[0m   [0;1mDROP TABLE "cars"[0m
+  [4;35;1mSQL (0.078000)[0m   [0mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT version FROM "schema_migrations"[0m
+Unable to load car, underlying cause no such file to load -- car.rb 
+
+ C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:60:in `depend_on'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:456:in `require_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:855:in `try_to_load_dependency'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:870:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:867:in `require_fixture_classes'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/fixtures.rb:850:in `fixtures'
+./vendor/plugins/method_cache/test/method_cache_test.rb:7
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `load'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5:in `each'
+C:/Program Files/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.1/lib/rake/rake_test_loader.rb:5
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
+  [4;36;1mCar Load (0.000000)[0m   [0;1mSELECT * FROM "cars" LIMIT 1[0m
+  [4;35;1mCar Load (0.000000)[0m   [0mSELECT * FROM "cars" LIMIT 1[0m
