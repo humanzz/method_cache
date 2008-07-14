@@ -29,6 +29,8 @@ Setup
 	
 Examples
 ========
+For caching instance methods
+
 class User < ActiveRecord::Base
   def costy_method
     #some real heavy calculation that takes alot of resources
@@ -38,5 +40,44 @@ class User < ActiveRecord::Base
   caches_method :costy_method
 end
 
+class User < ActiveRecord::Base
+  def costy_method
+    #some real heavy calculation that takes alot of resources
+    #to complete
+    #this method is called regularly and its results rarely change
+  end
+  caches_method :costy_method, :for => 20.minutes
+end
+
+class User < ActiveRecord::Base
+  def costy_method
+    #some real heavy calculation that takes alot of resources
+    #to complete
+    #this method is called regularly and its results rarely change
+  end
+  caches_method :costy_method, :until => :midnight
+end
+
+:until also accepts Time and date objects
+
+To expire cached instance methods
+@user.expire_method :costy_method
+User.expire_instance_method :costy_method, user_id
+
+For caching class methods
+
+class User < ActiveRecord::Base
+  def self.costy_class_method
+    #some real heavy calculation that takes alot of resources
+    #to complete
+    #this method is called regularly and its results rarely change
+  end
+  caches_class_method :costy_class_method
+end
+
+caches_class_method also supports the :for and :until options
+
+To expire class methods
+User.expire_class_method :costy_class_method
 
 Copyright (c) 2008 humanzz (Ahmed Sobhi), released under the MIT license
